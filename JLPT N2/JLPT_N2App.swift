@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct JLPT_N2App: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+    
+    init(){
+            FirebaseApp.configure()
+        }
+        
+        var body: some Scene {
+            WindowGroup {
+                ContentView()
+            }
         }
     }
-}
