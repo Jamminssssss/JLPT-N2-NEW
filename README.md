@@ -1,4 +1,3 @@
 # JLPT-N2-NEW
 
-<img src="Simulator Screen Shot - iPhone 14 - 2023-05-09 at 21 32 38.png"  width="60%" height="30%">
-
+![playstore](https://github.com/Jamminssssss/JLPT-N2-NEW/assets/91593937/cd8fc11f-e494-4706-bd8b-366933a35089)
