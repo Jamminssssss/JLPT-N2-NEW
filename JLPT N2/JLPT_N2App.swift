@@ -8,11 +8,13 @@
 import SwiftUI
 import Firebase
 
+
 @main
 struct JLPT_N2App: App {
     
     init(){
             FirebaseApp.configure()
+
         }
         
         var body: some Scene {

@@ -64,18 +64,10 @@ struct Home: View {
                 .font(.title3)
                 .fontWeight(.bold)
                 .padding(.bottom,12)
-            VStack {
-                Link(destination: URL(string: "https://www.youtube.com/watch?v=AalZV-aUfSg")!, label: {
-                    Text("소개 영상")
-                        .font(.system(size: 30))
-                        .frame(width: 300, height: 60)
-                        .background(Color.black)
-                        .foregroundColor(.white)
-                        .cornerRadius(20)
-                        .padding()
-                })
-            }
-
+            
+            
+            
+            
             ForEach(rules,id: \.self){rule in
                 HStack(alignment: .top, spacing: 10) {
                     Circle()
@@ -85,7 +77,7 @@ struct Home: View {
                     Text(rule)
                         .font(.callout)
                         .lineLimit(3)
-        
+                    
                 }
             }
         }
@@ -117,6 +109,7 @@ struct Home: View {
                     .foregroundColor(.gray)
             }
             .hAlign(.leading)
+            
         }
     }
     

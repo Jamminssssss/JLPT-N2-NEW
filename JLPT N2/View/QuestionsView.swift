@@ -26,7 +26,7 @@ struct QuestionsView: View {
                 Image(systemName: "xmark")
                     .font(.title3)
                     .fontWeight(.semibold)
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
             }
             .hAlign(.leading)
             
@@ -77,8 +77,7 @@ struct QuestionsView: View {
         .padding(15)
         .hAlign(.center).vAlign(.top)
         .background {
-            Color("BG")
-                .ignoresSafeArea()
+            Color.white.ignoresSafeArea()
         }
         .environment(\.colorScheme, .dark)
         .fullScreenCover(isPresented: $showScoreCard) {
@@ -98,14 +97,16 @@ struct QuestionsView: View {
                 .hAlign(.leading)
             
             Text(question.question)
-                .font(.title3)
+                .font(.system(size: 17))
                 .fontWeight(.semibold)
                 .foregroundColor(.black)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .fixedSize(horizontal: false, vertical: true)
             
             VStack(spacing: 12){
                 ForEach(question.options,id: \.self){option in
                     ZStack{
-                        OptionView(option, .gray)
+                        OptionView(option, .black)
                             .opacity(question.answer == option && question.tappedAnswer != "" ? 0 : 1)
                         OptionView(option, .green)
                             .opacity(question.answer == option && question.tappedAnswer != "" ? 1 : 0)
@@ -133,15 +134,18 @@ struct QuestionsView: View {
             RoundedRectangle(cornerRadius: 20, style: .continuous)
                 .fill(.white)
         }
+      
         .padding(.horizontal,15)
     }
     
     @ViewBuilder
     func OptionView(_ option: String,_ tint: Color)->some View{
         Text(option)
+            .fixedSize(horizontal: false, vertical: true)
+            .font(.system(size: 15))
             .foregroundColor(tint)
-            .padding(.horizontal,15)
-            .padding(.vertical,20)
+            .padding(.horizontal,5)
+            .padding(.vertical,10)
             .hAlign(.leading)
             .background {
                 RoundedRectangle(cornerRadius: 12, style: .continuous)
@@ -186,15 +190,26 @@ struct ScoreCardView: View{
                         .aspectRatio(contentMode: .fit)
                         .frame(height: 220)
                    
+                  
+                    Link(destination: URL(string: "https://www.youtube.com/watch?v=aBkXWvOzHfA")!, label: {
+                        Text("기획의도")
+                            .font(.system(size: 30))
+                            .frame(width: 300, height: 60)
+                            .background(Color.black)
+                            .foregroundColor(.white)
+                            .cornerRadius(20)
+                            .padding()
+                    })
+                    
                     Link(destination: URL(string: "https://www.youtube.com/watch?v=vg-OkwsC1Tk")!, label: {
-                            Text("해설 영상")
-                                .font(.system(size: 30))
-                                .frame(width: 300, height: 60)
-                                .background(Color.black)
-                                .foregroundColor(.white)
-                                .cornerRadius(20)
-                                .padding()
-                        })
+                        Text("샘플강의")
+                            .font(.system(size: 30))
+                            .frame(width: 300, height: 60)
+                            .background(Color.black)
+                            .foregroundColor(.white)
+                            .cornerRadius(20)
+                            .padding()
+                    })
                     
 
                 }
