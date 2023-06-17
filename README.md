@@ -27,6 +27,6 @@ JLPT N2 시험의 문자,어휘,독해,단어 문제를 제공합니다.
 
 https://apps.apple.com/kr/app/jlpt-n2-quiz/id6446638038
 
-## 시연영상.
+## 내가 만든 앱을 직접 풀고 해설하는 영상.
 
-https://www.youtube.com/watch?v=HBDxV7Pfg-w
+https://www.youtube.com/watch?v=vg-OkwsC1Tk
