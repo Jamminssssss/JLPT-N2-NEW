@@ -24,10 +24,6 @@ Provides text, vocabulary, reading, and word questions for the JLPT N2 exam.
 - Add a link button linked to YouTube so that you can make and watch YouTube videos of related apps
 
 
-## App Store
-
-https://apps.apple.com/kr/app/jlpt-n2-quiz/id6446638038
-
 ## JLPT N2 Quiz App Solving Video
 
 https://www.youtube.com/watch?v=vg-OkwsC1Tk
