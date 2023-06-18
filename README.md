@@ -28,6 +28,6 @@ Provides text, vocabulary, reading, and word questions for the JLPT N2 exam.
 
 https://apps.apple.com/kr/app/jlpt-n2-quiz/id6446638038
 
-## 내가 만든 앱을 직접 풀고 해설하는 영상.
+## JLPT N2 Quiz App Solving Video
 
 https://www.youtube.com/watch?v=vg-OkwsC1Tk
