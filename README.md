@@ -2,26 +2,27 @@
 
 <img width="981" alt="스크린샷 2023-06-17 오후 9 54 56" src="https://github.com/Jamminssssss/JLPT-N2-NEW/assets/91593937/7bacd9c8-1716-4cd7-817e-88ab9e52dbd4">
 
-## 개요.
+##JLPT N1 Quiz App
 
-일본어 능력 평가 시험 통칭 JLPT 문제를 퀴즈로 풀어볼수 있는 앱입니다.
+It is an app that allows you to solve JLPT questions, commonly called JLPT questions, through quizzes.
 
-문제의 난이도는 N2 입니다.
+The difficulty level of the question is N1.
 
-퀴즈는 실제 JLPT 시험 지문을 참고해서 제작되었습니다.
+The quiz was produced by referring to the actual JLPT test text.
 
-제작 목적은 JLPT N2 시험을 준비하는 수험생이 시험을 치기전에 가볍게 실력 체크를 해보는 용도입니다.
+The purpose of the production is for test takers preparing for the JLPT N1 test to lightly check their skills before taking the test.
 
-모르는 문제가 있다면 다음문제 버튼을 누르면 넘어갈수 있습니다.
+If you don't know any problems, press the next question button to move on.
 
-JLPT N2 시험의 문자,어휘,독해,단어 문제를 제공합니다.
+Provides text, vocabulary, reading, and word questions for the JLPT N1 exam.
 
-## 구현기능.
+## an implementation function.
 
-- Firebase / Firestore 를 이용해서 문제와 보기 관리합니다.
-- 문제를 진행할때마다 문제의 갯수가 표시 진행바 진행도를 표시합니다.
-- 문제를 다풀면 자신이 푼 문제의 정답률을 표시해줍니다.
-- 유튜브로 연동되는 링크 버튼을 추가해서 관련 앱의 유튜브 영상을 직접 제작해서 시청할수 있게 추가
+- Use Firebase / Fireestore to manage issues and views.
+- Displays the number of problems each time you proceed to the progress bar.
+- When you solve all the questions, it shows the percentage of correct answers to your questions.
+- Add a link button linked to YouTube so that you can make and watch YouTube videos of related apps
+
 
 ## 앱스토어.
 
